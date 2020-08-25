@@ -122,3 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockBreakSound: {fileID: 8300000, guid: 107867acae2b1434e8d2619b290446ea, type: 3}
+  blockDestroyVFX: {fileID: 191114, guid: 834c99069a124aa439d5795c3579843b, type: 3}

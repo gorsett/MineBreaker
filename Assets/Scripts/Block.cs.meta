@@ -3,7 +3,9 @@ guid: 66c110c417ac4ab41abad395ccb18844
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - blockBreakSound: {instanceID: 0}
+  - blockDestroyVFX: {fileID: 191114, guid: 834c99069a124aa439d5795c3579843b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

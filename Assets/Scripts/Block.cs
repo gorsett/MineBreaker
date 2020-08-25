@@ -6,6 +6,7 @@ public class Block : MonoBehaviour
 {
 
     [SerializeField] AudioClip blockBreakSound;
+    [SerializeField] GameObject blockDestroyVFX;
    
     // cached reference
     Level level;
@@ -13,7 +14,6 @@ public class Block : MonoBehaviour
 
     private void Start()
     {
-        gameStatus = FindObjectOfType<GameSession>();
         level = FindObjectOfType<Level>();
         level.CountBreakableBlocks();
     }
@@ -26,9 +26,22 @@ public class Block : MonoBehaviour
 
     private void DestroyBlock()
     {
-        AudioSource.PlayClipAtPoint(blockBreakSound, Camera.main.transform.position);
+        PlayBlockDestroySFX();
         Destroy(gameObject);
         level.BlockDestroyed();
-        gameStatus.AddToScore();
+        TriggerParticlesVFX();
+        
+    }
+
+    private void PlayBlockDestroySFX()
+    {
+        FindObjectOfType<GameSession>().AddToScore();
+        AudioSource.PlayClipAtPoint(blockBreakSound, Camera.main.transform.position);
+    }
+
+    private void TriggerParticlesVFX()
+    {
+        GameObject particles = Instantiate(blockDestroyVFX, transform.position, transform.rotation);
+        Destroy(particles, 2);
     }
 }
