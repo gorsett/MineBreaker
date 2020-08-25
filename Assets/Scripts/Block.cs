@@ -9,11 +9,11 @@ public class Block : MonoBehaviour
    
     // cached reference
     Level level;
-    GameStatus gameStatus;
+    GameSession gameStatus;
 
     private void Start()
     {
-        gameStatus = FindObjectOfType<GameStatus>();
+        gameStatus = FindObjectOfType<GameSession>();
         level = FindObjectOfType<Level>();
         level.CountBreakableBlocks();
     }
