@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4948728933238696835}
   m_Layer: 0
   m_Name: DirtBlock
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,3 +123,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockBreakSound: {fileID: 8300000, guid: 107867acae2b1434e8d2619b290446ea, type: 3}
   blockDestroyVFX: {fileID: 191114, guid: 834c99069a124aa439d5795c3579843b, type: 3}
+  maxHits: 3
+  timesHit: 0
