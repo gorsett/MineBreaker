@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4948728933238696834}
   - component: {fileID: 4948728933238696835}
   m_Layer: 0
-  m_Name: SandBlock
+  m_Name: 2-Hit Sandblock
   m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c110c417ac4ab41abad395ccb18844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockBreakSound: {fileID: 8300000, guid: 107867acae2b1434e8d2619b290446ea, type: 3}
+  blockBreakSound: {fileID: 8300000, guid: b2d470c4fb8f46747acf59b0a65d5015, type: 3}
   blockDestroyVFX: {fileID: 191114, guid: 834c99069a124aa439d5795c3579843b, type: 3}
-  maxHits: 2
+  hitSprites:
+  - {fileID: 21300000, guid: 4454a326e0158e842908a9a0f98c5adf, type: 3}
   timesHit: 0

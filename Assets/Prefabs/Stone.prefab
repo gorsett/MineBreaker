@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4948728933238696834}
   - component: {fileID: 4948728933238696835}
   m_Layer: 0
-  m_Name: '2-Hit DirtBlock '
+  m_Name: Stone
   m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06c8aadac294f504a94f28a7fbfd1969, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 43eb0997815a87b4d958eeb924cd7506, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,9 +121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c110c417ac4ab41abad395ccb18844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockBreakSound: {fileID: 8300000, guid: 107867acae2b1434e8d2619b290446ea, type: 3}
+  blockBreakSound: {fileID: 8300000, guid: 26b589f7637da1f48b1cfa9fcd0ad453, type: 3}
   blockDestroyVFX: {fileID: 191114, guid: 834c99069a124aa439d5795c3579843b, type: 3}
-  maxHits: 2
   hitSprites:
-  - {fileID: 21300000, guid: 323a24250a437b441be17e02a0159bc1, type: 3}
+  - {fileID: 21300000, guid: 43eb0997815a87b4d958eeb924cd7506, type: 3}
+  - {fileID: 21300000, guid: 1a79f6ceb65e5604dadb987a02107eaf, type: 3}
+  - {fileID: 21300000, guid: 1a79f6ceb65e5604dadb987a02107eaf, type: 3}
+  - {fileID: 21300000, guid: de59cdc21968c1a4b957cea52b2a5a4c, type: 3}
+  - {fileID: 21300000, guid: de59cdc21968c1a4b957cea52b2a5a4c, type: 3}
   timesHit: 0
